@@ -1,0 +1,22 @@
+<table border="1">
+    <thead></thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>DESIGNATION</th>
+      <th>SALARY</th>
+      <th>EMAIL ID</th>
+      <th>ADHAR NO.</th>
+      </tr>
+    
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.empId}}</td>
+            <td>{{employee.empName}}</td>
+            <td>{{employee.designation}}</td>
+            <td>{{employee.empSal}}</td>
+            <td>{{employee.empEmail}}</td>
+            <td>{{employee.adhaarNo}}</td>
+            </tr>
+    </tbody>
+    </table>
