@@ -25,4 +25,11 @@ export class HttpClientService {
     console.log("test call");
     return this.httpClient.get<Employee[]>('http://localhost:6062/employees');
   }
+  public deleteEmployee(employee) {
+    return this.httpClient.delete<Employee>("http://localhost:6062/employees" + "/"+ employee.empId);
+  }
+
+  public createEmployee(employee) {
+    return this.httpClient.post<Employee>("http://localhost:6062/employees", employee);
+  }
 }

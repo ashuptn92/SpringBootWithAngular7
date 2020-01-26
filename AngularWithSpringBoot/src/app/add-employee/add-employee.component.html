@@ -1,0 +1,37 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Employee</h2>
+    <form>
+        <div class="form-group">
+            <label for="empId">Employee Id</label>
+            <input [(ngModel)]="user.empId" placeholder="Employee Id" name="Employee Id" class="form-control" id="employeeid">
+       </div>
+
+      <div class="form-group">
+        <label for="name">Employee Name</label>
+        <input type="name" [(ngModel)]="user.empName" placeholder="Name" name="name" class="form-control" id="name">
+      </div>
+    
+      <div class="form-group">
+        <label for="designation">Designation:</label>
+        <input [(ngModel)]="user.designation" placeholder="Designation" name="designation" class="form-control" id="designation">
+      </div>
+
+      <div class="form-group">
+        <label for="empSal">Employee Salary</label>
+        <input [(ngModel)]="user.empSal" placeholder="Employee empSal" name="Employee empSal" class="form-control" id="employeeempSal">
+      </div>
+
+      <div class="form-group">
+        <label for="empEmail">Employee Email</label>
+        <input [(ngModel)]="user.empEmail" placeholder="Employee empEmail" name="Employee empEmail" class="form-control" id="employeeempEmail">
+      </div>
+
+      <div class="form-group">
+        <label for="adhaarNo">Employee Adhar No.</label>
+        <input [(ngModel)]="user.adhaarNo" placeholder="Employee adhaarNo" name="Employee adhaarNo" class="form-control" id="employeeadhaarNo">
+      </div>
+    
+      <button class="btn btn-success" (click)="createEmployee()">Create</button>
+    </form>
+    </div>
+    
